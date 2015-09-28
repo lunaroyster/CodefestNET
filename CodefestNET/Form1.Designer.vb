@@ -25,20 +25,22 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.ControlPanel = New System.Windows.Forms.Panel
         Me.Bexit = New System.Windows.Forms.Button
-        Me.Bmax = New System.Windows.Forms.Button
         Me.Bmin = New System.Windows.Forms.Button
+        Me.Console = New System.Windows.Forms.TextBox
+        Me.Panel1 = New System.Windows.Forms.Panel
+        Me.Button1 = New System.Windows.Forms.Button
         Me.ControlPanel.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ControlPanel
         '
         Me.ControlPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ControlPanel.Controls.Add(Me.Bexit)
-        Me.ControlPanel.Controls.Add(Me.Bmax)
         Me.ControlPanel.Controls.Add(Me.Bmin)
-        Me.ControlPanel.Location = New System.Drawing.Point(862, 12)
+        Me.ControlPanel.Location = New System.Drawing.Point(884, 3)
         Me.ControlPanel.Name = "ControlPanel"
-        Me.ControlPanel.Size = New System.Drawing.Size(114, 38)
+        Me.ControlPanel.Size = New System.Drawing.Size(77, 38)
         Me.ControlPanel.TabIndex = 5
         '
         'Bexit
@@ -51,27 +53,11 @@ Partial Class Form1
         Me.Bexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bexit.ForeColor = System.Drawing.Color.White
         Me.Bexit.Image = CType(resources.GetObject("Bexit.Image"), System.Drawing.Image)
-        Me.Bexit.Location = New System.Drawing.Point(79, 3)
+        Me.Bexit.Location = New System.Drawing.Point(41, 3)
         Me.Bexit.Name = "Bexit"
         Me.Bexit.Size = New System.Drawing.Size(32, 32)
         Me.Bexit.TabIndex = 1
         Me.Bexit.UseVisualStyleBackColor = False
-        '
-        'Bmax
-        '
-        Me.Bmax.BackColor = System.Drawing.Color.Transparent
-        Me.Bmax.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.Bmax.FlatAppearance.BorderSize = 2
-        Me.Bmax.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.Bmax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Bmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bmax.ForeColor = System.Drawing.Color.White
-        Me.Bmax.Image = CType(resources.GetObject("Bmax.Image"), System.Drawing.Image)
-        Me.Bmax.Location = New System.Drawing.Point(41, 3)
-        Me.Bmax.Name = "Bmax"
-        Me.Bmax.Size = New System.Drawing.Size(32, 32)
-        Me.Bmax.TabIndex = 3
-        Me.Bmax.UseVisualStyleBackColor = False
         '
         'Bmin
         '
@@ -89,24 +75,70 @@ Partial Class Form1
         Me.Bmin.TabIndex = 2
         Me.Bmin.UseVisualStyleBackColor = False
         '
+        'Console
+        '
+        Me.Console.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Console.BackColor = System.Drawing.Color.Black
+        Me.Console.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Console.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Console.Font = New System.Drawing.Font("Lucida Console", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Console.ForeColor = System.Drawing.Color.White
+        Me.Console.Location = New System.Drawing.Point(12, 62)
+        Me.Console.Multiline = True
+        Me.Console.Name = "Console"
+        Me.Console.ReadOnly = True
+        Me.Console.Size = New System.Drawing.Size(964, 473)
+        Me.Console.TabIndex = 6
+        '
+        'Panel1
+        '
+        Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.ControlPanel)
+        Me.Panel1.Location = New System.Drawing.Point(12, 12)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(964, 44)
+        Me.Panel1.TabIndex = 7
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Black
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.Location = New System.Drawing.Point(3, 11)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(91, 23)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Debug Button"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(988, 547)
-        Me.Controls.Add(Me.ControlPanel)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Console)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
         Me.Opacity = 0.9
         Me.Text = "Form1"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ControlPanel.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ControlPanel As System.Windows.Forms.Panel
     Friend WithEvents Bexit As System.Windows.Forms.Button
-    Friend WithEvents Bmax As System.Windows.Forms.Button
     Friend WithEvents Bmin As System.Windows.Forms.Button
+    Friend WithEvents Console As System.Windows.Forms.TextBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
