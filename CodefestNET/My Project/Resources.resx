@@ -121,4 +121,7 @@
   <data name="asciiArt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>asciiArt.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="ping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ping.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

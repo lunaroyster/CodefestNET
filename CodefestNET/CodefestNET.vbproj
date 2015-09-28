@@ -116,6 +116,9 @@
     <None Include="My Project\asciiArt.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\ping.wav" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

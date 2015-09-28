@@ -38,6 +38,7 @@
     Private Sub Writeline(ByVal input As String)
         For Each c As Char In input
             Console.Text += c
+            My.Computer.Audio.Play(My.Resources.ping, AudioPlayMode.Background)
             Threading.Thread.Sleep(5)
             Application.DoEvents()
         Next

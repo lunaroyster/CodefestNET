@@ -62,15 +62,23 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to ████████▄     ▄███████▄    ▄████████         ▄████████    ▄████████    ▄████████     ███
+        '''
         '''███   ▀███   ███    ███   ███    ███        ███    ███   ███    ███   ███    ███ ▀█████████▄
+        '''
         '''███    ███   ███    ███   ███    █▀         ███    █▀    ███    ███   ███    █▀     ▀███▀▀██
         '''███    ███ ▀█████████▀  ▀███████████      ▀▀███▀▀▀     ▀███████████ ▀███████████     ███
         '''███    ███   ███                 ███        ███    █▄    ███    ███          ███     ███
-        '''███   ▄███   ███           ▄█    ███        ███    ███   [rest of string was truncated]&quot;;.
+        '''███   ▄███   ███           ▄█    ███        ███    █ [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property asciiArt() As String
             Get
                 Return ResourceManager.GetString("asciiArt", resourceCulture)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property ping() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("ping", resourceCulture)
             End Get
         End Property
     End Module
