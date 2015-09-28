@@ -2,7 +2,7 @@
 
     Dim CurrentOutput As String
     Dim asciiart As String = My.Resources.asciiArt
-    Dim S_Intro As String = " Welcome to C"
+    Dim S_Intro As String = " Welcome to Codefest 2015"
 
 #Region "FORM CONTROLS"
 
@@ -50,7 +50,7 @@
 
 
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Deb1.Click
         Main()
     End Sub
 
@@ -72,4 +72,7 @@
 
 #End Region
 
+    Private Sub Clear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Clear.Click
+        cls()
+    End Sub
 End Class

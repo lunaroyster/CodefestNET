@@ -28,7 +28,8 @@ Partial Class Form1
         Me.Bmin = New System.Windows.Forms.Button
         Me.Console = New System.Windows.Forms.TextBox
         Me.Panel1 = New System.Windows.Forms.Panel
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.Deb1 = New System.Windows.Forms.Button
+        Me.Clear = New System.Windows.Forms.Button
         Me.ControlPanel.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -96,24 +97,37 @@ Partial Class Form1
         '
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.Clear)
+        Me.Panel1.Controls.Add(Me.Deb1)
         Me.Panel1.Controls.Add(Me.ControlPanel)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(964, 44)
         Me.Panel1.TabIndex = 7
         '
-        'Button1
+        'Deb1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Black
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
-        Me.Button1.Location = New System.Drawing.Point(3, 11)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(91, 23)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Debug Button"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Deb1.BackColor = System.Drawing.Color.Black
+        Me.Deb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Deb1.ForeColor = System.Drawing.Color.Transparent
+        Me.Deb1.Location = New System.Drawing.Point(3, 11)
+        Me.Deb1.Name = "Deb1"
+        Me.Deb1.Size = New System.Drawing.Size(91, 23)
+        Me.Deb1.TabIndex = 6
+        Me.Deb1.Text = "Debug Button"
+        Me.Deb1.UseVisualStyleBackColor = False
+        '
+        'Clear
+        '
+        Me.Clear.BackColor = System.Drawing.Color.Black
+        Me.Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Clear.ForeColor = System.Drawing.Color.Transparent
+        Me.Clear.Location = New System.Drawing.Point(100, 11)
+        Me.Clear.Name = "Clear"
+        Me.Clear.Size = New System.Drawing.Size(91, 23)
+        Me.Clear.TabIndex = 7
+        Me.Clear.Text = "Clear"
+        Me.Clear.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -139,6 +153,7 @@ Partial Class Form1
     Friend WithEvents Bmin As System.Windows.Forms.Button
     Friend WithEvents Console As System.Windows.Forms.TextBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Deb1 As System.Windows.Forms.Button
+    Friend WithEvents Clear As System.Windows.Forms.Button
 
 End Class
